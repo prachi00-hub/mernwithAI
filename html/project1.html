@@ -1,53 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project1</title>
-    <link rel="stylesheet" href="project1.css" />
-  </head>
-  <body>
-    <h1>All Flexbox Concepts - Basic HTML Demo</h1>
-    <section class="section">
-      <h2>1. Display: Flex</h2>
-      <p>This enables Flexbox layout on a container.</p>
-      <section class="flexContainer1">
-        <div class="flexItem">Item 1</div>
-        <div class="flexItem">Item 2</div>
-        <div class="flexItem">Item 3</div>
-      </section>
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Demo</title>
+  <link rel="stylesheet" href="project1.css">
+</head>
+<body>
 
-       <section class="section">
-      <h2>2. Flex Direction</h2>
-      <p>Direction of the main axis (row by default).</p>
-      <section class="flexContainer2">
-        <div class="d">column 1</div>
-        <div class="d">column 2</div>
-        <div class="d">column 3</div>
-      </section>
+<h1>All Flexbox Concepts - Basic HTML Demo</h1>
 
-       <section class="section">
-      <h2>3. Justify Content</h2>
-      <p>Controls alignment along the main axis (horizontal if flex-direction is row).</p>
-      <section class="flexContainer3">
-        <div class="s">start</div>
-        <div class="s">center</div>
-        <div class="s">Aligned</div>
-        <div class="s">end</div>
-      </section>
+<!-- 1. Display Flex -->
+<section>
+  <h2>1. Display: Flex</h2>
+  <p>This enables Flexbox layout on a container</p>
 
-       <section class="section">
-      <h2>4. Align Items</h2>
-      <p>Controls alignment along the cross axis (vertical if flex-direction is row).</p>
-      <section class="flexContainer4">
-        <div class="a">top</div>
-        <div class="a" id="b">tall</div>
-        <div class="a">short</div>
-      </section>
-       
-      
+  <div class="flex box">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+</section>
 
+<!-- 2. Flex Direction -->
+<section>
+  <h2>2. Flex Direction</h2>
+  <p>Direction of the main axis</p>
 
-    </section>
-  </body>
+  <div class="flex column box">
+    <div class="item">Column 1</div>
+    <div class="item">Column 2</div>
+    <div class="item">Column 3</div>
+  </div>
+</section>
+
+<!-- 3. Justify Content -->
+<section>
+  <h2>3. Justify Content</h2>
+  <p>Controls alignment along main axis</p>
+
+  <div class="flex justify-center box">
+    <div class="item">Center</div>
+    <div class="item">Aligned</div>
+  </div>
+
+  <div class="flex justify-between box">
+    <div class="item">Start</div>
+    <div class="item">End</div>
+  </div>
+</section>
+
+<!-- 4. Align Items -->
+<section>
+  <h2>4. Align Items</h2>
+  <p>Controls alignment on cross axis</p>
+
+  <div class="flex align-start box height">
+    <div class="item small">Top</div>
+    <div class="item tall">Tall</div>
+    <div class="item small">Short</div>
+  </div>
+</section>
+
+<!-- 5. Flex Wrap -->
+<section>
+  <h2>5. Flex Wrap</h2>
+
+  <div class="flex wrap box">
+    <div class="item big">Box 1</div>
+    <div class="item big">Box 2</div>
+    <div class="item big">Box 3</div>
+    <div class="item big">Box 4</div>
+  </div>
+</section>
+
+<!-- 6. Gap -->
+<section>
+  <h2>6. Gap</h2>
+
+  <div class="flex gap box">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+  </div>
+</section>
+
+<!-- 7. Flex Grow -->
+<section>
+  <h2>7. Flex Grow</h2>
+
+  <div class="flex box">
+    <div class="item grow1">Grow 1</div>
+    <div class="item grow2">Grow 2</div>
+    <div class="item">No Grow</div>
+  </div>
+</section>
+
+<!-- 8. Flex Shrink -->
+<section>
+  <h2>8. Flex Shrink</h2>
+
+  <div class="flex box small-width">
+    <div class="item shrink">Shrink</div>
+    <div class="item no-shrink">No shrink</div>
+  </div>
+</section>
+
+<!-- 9. Flex Basis -->
+<section>
+  <h2>9. Flex Basis</h2>
+
+  <div class="flex box">
+    <div class="item basis">150px Basis</div>
+    <div class="item">Auto</div>
+  </div>
+</section>
+
+<!-- 10. Order -->
+<section>
+  <h2>10. Order</h2>
+
+  <div class="flex box">
+    <div class="item">Default</div>
+    <div class="item order2">Order 2</div>
+    <div class="item order1">Order 1</div>
+  </div>
+</section>
+
+<!-- 11. Align Self -->
+<section>
+  <h2>11. Align Self</h2>
+
+  <div class="flex box height">
+    <div class="item self-start">Top</div>
+    <div class="item self-center">Center</div>
+    <div class="item self-end">Bottom</div>
+  </div>
+</section>
+
+</body>
 </html>
